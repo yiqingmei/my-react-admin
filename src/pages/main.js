@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 import { useSelector } from 'react-redux'
 import CommonSide from '../components/commonSide';
 import CommonHeader from '../components/commonHeader';
+import { Outlet } from 'react-router-dom';
 
 const { Content} = Layout;
 const Main = () => {
@@ -18,7 +19,7 @@ const Main = () => {
             padding: 24
           }}
         >
-          Content
+          <Outlet />
         </Content>
       </Layout>
     </Layout>
